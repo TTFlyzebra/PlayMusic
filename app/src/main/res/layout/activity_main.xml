@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_line01"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbk1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal" >        
+
+        <TextView
+            android:id="@+id/main_tv04"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#770077"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        
+        <TextView
+            android:id="@+id/main_tv05"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#FF00FF"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/main_tv06"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#770077"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_line03"
+        android:layout_below="@id/main_line01"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/main_line03"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/main_line04"
+        android:background="@drawable/control1"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/empty" />
+
+        <com.flyzebra.playmusic.activity.MarqueeTextView
+            android:id="@+id/main_tv01"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/showtextbk"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/justplay"
+            android:textColor="#FFFF00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/empty" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_line04"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/main_line05"
+        android:background="@drawable/control2"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/main_tv02"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/showtextbk"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#00FF00"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/main_sk01"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/showtextbk"
+            android:maxHeight="1dp"
+            android:minHeight="1dp"
+            android:progressDrawable="@drawable/seek_progress"
+            android:thumb="@drawable/seek_thumb"
+            android:thumbOffset="0dip" />
+        <!-- maxHeight minHeight 设置进度条高度thumbOffset滑块不被遮挡 -->
+
+        <TextView
+            android:id="@+id/main_tv03"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/showtextbk"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#00FF00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_line05"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/control3"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <ImageButton
+            android:id="@+id/main_butstop"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:background="@drawable/butexit"
+            android:contentDescription="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/main_butfore"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:background="@drawable/butfore"
+            android:contentDescription="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/main_butplay"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:background="@drawable/m_play"
+            android:contentDescription="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/main_butnext"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:background="@drawable/butnext"
+            android:contentDescription="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/main_butsets"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:background="@drawable/butsets"
+            android:contentDescription="@string/empty" />
+    </LinearLayout>
+
+</RelativeLayout>

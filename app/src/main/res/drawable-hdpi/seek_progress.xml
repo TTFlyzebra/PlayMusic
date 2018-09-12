@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 进度条背景 -->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/seek_0">
+    </item>
+
+    <!-- 进度条式样1 -->
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/seek_1">
+    </item>
+
+    <!-- 进度条式样2 -->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@drawable/seek_0">
+    </item>
+
+</layer-list>

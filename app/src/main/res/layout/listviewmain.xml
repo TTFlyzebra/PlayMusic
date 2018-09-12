@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listline"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/listitembk0"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/listtv01"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="8dp"
+        android:gravity="right"
+        android:paddingRight="1dp"
+        android:singleLine="true"
+        android:text="@string/testnum"
+        android:textSize="18sp" />
+
+    <!--LinearLayout
+        android:id="@+id/imgline"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="1dp" -->
+
+        <ImageButton
+            android:id="@+id/listbt01"
+            android:layout_width="40dp"
+            android:layout_height="40dp"           
+            android:tileMode="disabled"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/m_ylove"
+            android:contentDescription="@string/empty" />
+    <!--  /LinearLayout-->
+    <TextView
+        android:id="@+id/listtv03"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/listbt01"
+        android:paddingTop="8dp"
+        android:gravity="right"
+        android:paddingRight="1dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/listtv02"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"  
+        android:paddingTop="8dp"      
+        android:layout_toLeftOf="@id/listtv03"
+        android:layout_toRightOf="@id/listtv01"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/testtext"
+        android:textSize="18sp" />
+
+</RelativeLayout>

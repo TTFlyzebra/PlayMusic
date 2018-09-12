@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">音乐播放器</string>
+    <string name="app_name1">音乐播放器</string>
+    <string name="app_name2">播放器设置</string>
+    <string name="action_settings">Settings</string>
+    <string name="justplay">正在播放:</string>
+    <string name="testnum">88:88</string>
+    <string name="testtext">This is test text message!</string>
+    <string name="empty"></string> 
+    <string name="palylistend">顺序播放</string>
+    <string name="playlistloop">列表循环</string>
+    <string name="playsingleloop">单曲循环</string>
+    <string name="playrandom">随机播放</string>
+    <string name="setplaymode">设置播放模式：</string>
+    <string name="setviewmode">设置显示模式：</string>
+    <string name="butset">保存设置</string>
+    <string name="butcancel">返回播放器</string>
+    <string name="showfull">全屏显示</string>
+    <string name="showwindow">窗口显示</string>
+    <string name="butexit">退出播放器</string>
+    <string name="mylove">收藏</string>
+    <string name="sdcard">SD卡</string>
+    <string name="about">关于</string>
+    <string name="managermusic">管理歌曲列表：</string>
+    <string name="storeaddall">收藏所有歌曲</string>
+    <string name="storecancleall">取消所有收藏</string>
+    <string name="updatemusic">更新手机歌曲</string>
+    <string name="delallstore">删除未收藏歌曲</string>
+    <string name="aboutfile">歌曲文件信息</string>  
+    <string name="filename" >文件名称：</string> 
+    <string name="filesize">文件大小：</string>
+    <string name="filetime">播放时间：</string>
+    <string name="filepath" >所在位置：</string> 
+</resources>
